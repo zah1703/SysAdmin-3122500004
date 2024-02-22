@@ -3,11 +3,10 @@
   <h1>WORKSHOP ADMINISTRASI JARINGAN</h1>
   <h2>Tugas 1 Sistem Operasi Debian</h2>
 <img src="img/logo.png" alt="Alt teks">
-<h3>Dosen Pengampu :
+<h3><br>Dosen Pengampu :
+<br> Dr..Ferry Astika Saputra,ST, M.Sc</h3> </div>
 
-Dr..Ferry Astika Saputra,ST, M.Sc
 <br>Disusun Oleh:
-
 <br>Zahrotul Hidayah 	      (3122500004)
 <br>Leody Zelvon Herdiansah (3122500010)
 <br>Adam Rasyid Nurmuhammad	(3122500018)</br>
