@@ -6,7 +6,7 @@
 <h3>Dosen Pengampu :
 
 Dr..Ferry Astika Saputra,ST, M.Sc
-Disusun Oleh:
+<br>Disusun Oleh:
 
 <br>Zahrotul Hidayah 	      (3122500004)
 <br>Leody Zelvon Herdiansah (3122500010)
