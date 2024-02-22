@@ -106,7 +106,7 @@ Artinya, grup pengguna dengan nama wheel memiliki ID 10 dan memiliki dua anggota
 <img src="img/4b.png" alt="Alt teks"></br>
 
 <br>5. Jelaskan fungsi dari "sudo" !
-<br>Jawab:
+<br>Jawab:</br>
 <img src="img/5.png" alt="Alt teks"></br>
 Sudo merupakan sebuah perintah dalam command-line Linux. Apabila user memiliki akses root, maka sudo akan melakukan perintah sebagai superuser. Pengguna sudo dan perintah-perintah yang dapat mereka pergunakan terdapat pada file konfigurasi, /etc/sudoers. </br>
 
