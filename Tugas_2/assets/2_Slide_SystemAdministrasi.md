@@ -35,7 +35,7 @@ Untuk mengedit dan memodifikasi file source.list, Anda dapat menggunakan salah s
 
 
 ---
-![Logo Marp](./assets/1.png)
+![Logo Marp](./img/1.png)
 
 ---
 ##### 8.1.2 About repositories, branches and parts/components
@@ -83,97 +83,97 @@ Baris perintah All-in-One (dalam mode administrator) untuk memperbarui informasi
 ### 8.3	Software : the simplified package manager
 ##### 8.3.1	Software: searching an application
 Klik tombol pencarian atau dengan memilih salah satu kategori yang ditampilkan:	
-![Logo Marp](./assets/2.png)
+![Logo Marp](./img/2.png)
 
 
 ---
 ##### 8.3.2	Software: installing an application
-![Logo Marp](./assets/3ok.png)
+![Logo Marp](./img/3ok.png)
 
 ---
 ##### 8.3.3	Software: removing an application
-![Logo Marp](./assets/4ok.png)
+![Logo Marp](./img/4ok.png)
 
 ---
 ##### 8.3.4	Software: upgrading your applications
-![Logo Marp](./assets/5.png)
+![Logo Marp](./img/5.png)
 
 ---
 ##### 8.3.5	Software: modify packages repositories
-![Logo Marp](./assets/6.png)
+![Logo Marp](./img/6.png)
 
 ---
 ##### 8.3.6	Automatic updates with Software
 Untuk memanfaatkan sistem Anda tanpa mengkhawatirkan pembaruan, Anda dapat mengaktifkan mekanisme pembaruan otomatis. Dari menu “Perangkat Lunak”, pilih “Preferensi Pembaruan”
-![Logo Marp](./assets/7.png)
+![Logo Marp](./img/7.png)
 
 ---
 ##### 8.4	Discover: the KDE package manager
 Gnome menggunakan "Perangkat Lunak" untuk mengelola aplikasi dengan cara yang disederhanakan, KDE mengintegrasikan Discover, sebuah program yang intuitif dan efisien.
 
 Discover diluncurkan hanya dari menu utama KDE >Aplikasi> Sistem > Pusat Perangkat Lunak:
-![Logo Marp](./assets/8.png)
+![Logo Marp](./img/8.png)
 
 ---
-![Logo Marp](./assets/9.png)
+![Logo Marp](./img/9.png)
 Jangan ragu untuk menelusuri aplikasi, Anda akan diminta untuk mengkonfirmasi setiap modifikasi yang dilakukan pada paket Anda.
 
 ---
 ##### 8.4.1	Search and install with Discover
 Untuk menemukan aplikasi, ketikkan namanya di kolom pencarian khusus atau kunjungi berbagai kategori Discover. Kemudian klik tombol “Instal”
-![Logo Marp](./assets/10.png)
+![Logo Marp](./img/10.png)
 
 ---
-![Logo Marp](./assets/11.png)
+![Logo Marp](./img/11.png)
 
 ---
 ##### 8.4.2	Uninstalling an application with Discover
 Dengan Discover, cukup kunjungi kategori “Installed” lalu klik “Remove”:
 
-![Logo Marp](./assets/12.png)
+![Logo Marp](./img/12.png)
 
 ---
 ##### 8.4.3	Discover: updating your applications
-![Logo Marp](./assets/13.png)
+![Logo Marp](./img/13.png)
 
 ---
 ##### 8.4.4	Discover: managing repositories
 Pustaka perangkat lunak KDE memungkinkan Anda mengubah sumber aplikasi Anda tanpa menggunakan terminal.
-![Logo Marp](./assets/14.png)
+![Logo Marp](./img/14.png)
 
 ---
 ### 8.5	Synaptic: the comprehensive package manager
 ##### 8.5.1	Synaptic: Main interface
-![Logo Marp](./assets/15.png)
+![Logo Marp](./img/15.png)
 
 ---
 ##### 8.5.2	Managing the repositories with Synaptic
 Buka manajer paket Synaptic (menu Sistem > Manajer paket Synaptic). klik “Pengaturan, lalu” Repositori”.
-![Logo Marp](./assets/16.png)
+![Logo Marp](./img/16.png)
 
 ---
 ##### 8.5.3	Updating the system with Synaptic
 Anda hanya perlu mengklik tombol “Tambahkan ke pilihan” lalu “Terapkan”, dan menerima konfirmasi yang diminta:
-![Logo Marp](./assets/17.png)
+![Logo Marp](./img/17.png)
 
 ---
 Proses pembaruan sistem dimulai dengan mengunduh paket, dan dilanjutkan dengan instalasinya.
-![Logo Marp](./assets/18.png)
+![Logo Marp](./img/18.png)
 
 ---
 ##### 8.5.4	Searching for a software
 Jika Anda mengetahui nama paketnya atau jika Anda sedang mencari sesuatu, klik tombol pencarian (di bilah atas) dan masukkan kata kunci pencarian Anda di jendela yang terbuka.
-![Logo Marp](./assets/19.png)
+![Logo Marp](./img/19.png)
 
 ---
 ##### 8.5.5	Installing a package with Synaptic
 Untuk menginstal satu atau beberapa paket, klik kanan pada kotak kecil di depan nama paket, dan pilih opsi “Mark for Installation”.
-![Logo Marp](./assets/20.png)
+![Logo Marp](./img/20.png)
 
 ---
 ##### 8.5.6	Uninstall a package with Synaptic
 Penghapusan sederhana akan menyimpan file konfigurasi paket di sistem Anda, jika Anda ingin menginstalnya kembali nanti.
-![Logo Marp](./assets/21.png)
+![Logo Marp](./img/21.png)
 
 ---
 ##### 8.5.7	Look at detailed information on a package
@@ -182,7 +182,7 @@ Maka Anda akan mengetahui segalanya - secara positif segalanya - pada paket ini:
 
 ---
 ###### 8.5.8	Synaptic preferences
-![Logo Marp](./assets/22.png)
+![Logo Marp](./img/22.png)
 
 ---
 ##### 8.6	Cleaning the system
