@@ -17,7 +17,7 @@ theme: gaia
     }
 </style>
 # System Administrasi
-# ![Logo Marp](./assets/logo.png) 
+# ![Logo Marp](./img/logo.png) 
                                     Disusun Oleh:
                         Zahrotul Hidayah 	    (3122500004)
                         Leody Zelvon Herliansa  (3122500010)
