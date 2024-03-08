@@ -14,7 +14,7 @@
 | [Leody Zelvon Herliansa](https://github.com/Leodyz)| 3122500010 |
 | [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 |                                   
 
-## LINUX APT COMMAND
+## TUGAS 3 LINUX APT COMMAND
 
 ### UNTUK USER
 
