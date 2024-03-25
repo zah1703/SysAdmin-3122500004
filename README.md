@@ -14,173 +14,111 @@
 | [Leody Zelvon Herliansa](https://github.com/Leodyz)| 3122500010 |
 | [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 |                                   
 
-## TUGAS 3 LINUX APT COMMAND
+# TUGAS 4
 
-### UNTUK USER
+**DAFTAR ISI**
 
-| Command           | Description     |
-|-----------        |-----------|
-|apt show foo       |Menampilkan informasi paket foo      |
-|apt search foo     | Mencari paket bernama/berkaitan foo         |
-|apt-cache policy foo| Menampilkan versi tersedia paket foo       |
+1. [Bagaimana Internet Bekerja (pribadi)](#bagaimana-internet-bekerja)
+2. [DNS Query (pribadi)](#2-dns-query)
+3. [BIND9 Kelompok 8](#3-config-bind9)
 
 
-### Command apt untuk Administrator
+## 1. Bagaimana Internet bekerja?
 
-> **Gunakan** sudo untuk menjalankan perintah berikut (root)
+***Jawaban dibawah adalah ekosistem internet menurut saya berdasarkan materi dari bapak Ferry Astika***
 
-| Command           | Description     |
-|-----------        |-----------|
-|apt update      |Update repository metadata (list versi dll)     |
-|apt install foo   | Memasang paket foo dan yang terkait        |
-|apt upgrade| Menghapus versi lama paket      |
-|apt full-upgrade| Mengupdate/hapus paket yang beneran terbaru     |
-|apt remove foo| Menghapus paket foo, tidak confignya    |
+Jaringan internet bekerja berdasarkan rangkaian protokol komunikasi dan teknologi infrastruktur yang memungkinkan perangkat. Berikut adalah langkah sederhana bagaimana proses tersebut berlangsung:
 
-## Cara menggunakan APT command
-> Mengubah Repository Apt (pastikan gunakan sudo)
+- Perangkat Anda (seperti komputer): Ketika memasukkan alamat situs web, komputer Anda akan pertama-tama mencari alamat IP dari situs tersebut melalui sistem Domain Name System (DNS).
 
-![Update Dependencies](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/apt_sourceslist.png)
+- Koneksi ke Server: Setelah mendapatkan alamat IP, komputer akan meminta koneksi ke server situs tersebut. Kemudian, permintaan ini dikirim melalui peralatan jaringan lokal Anda. Lalu, ke penyedia layanan internet (ISP) dan selanjutnya ke server tujuan.
 
-> Setelah melakukan update dan upgrade untuk depedency, kita bisa install aplikasi menggunakan Aplikasi Software Bawaan
+- Pertukaran Data: Server akan merespons permintaan Anda dengan cara mengirimkan data halaman web yang Anda inginkan kembali ke komputer.
 
-![Software Terinstall](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/software_terinstall.png)
+- Tampilan di Browser: Kemudian, data yang diterima oleh komputer ini akan diinterpretasikan oleh browser dan ditampilkan sebagai halaman web.
 
-### Melihat Storage yang terpakai di linux menggukan Terminal
+## 2. DNS Query
 
-![Free Storage](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/3_disk_free.png)
+***Bagaimana Cara kerja dari iterative dan recursive dari DNS Query, ada 8 step, dari PC anda! misal akses detik.com***
 
-### Membuat daftar Directory, diurutkan dari yang terbesar yang terkecil
+Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/what-is-dns)
 
-> Melihat isi direktori dengan perintah du dan sort (satuan megabyte):
+**Query DNS**
+![Gambar Cara kerja DNS](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/how-does-dns-work-1024x590.png)
 
-![Sorting Directory](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/4_du_sort.png)
+- Langkah 1 : Klien memasukkan www.detik.com ke dalam browser dan menekan Enter. Sebuah DNS query untuk alamat IP (record a) dikirim oleh resolver sistem operasi ke server DNS.
 
-### Perintah ncdu (NCurses Disk Usage)
+- Langkah 2 : Server DNS menerima query dan mulai mencari melalui tabelnya (cache) untuk mencari alamat IP untuk www.detik.com. Namun, entri tersebut tidak ada dalam tabelnya.
 
-    Fungsi perintah ncdu untuk memberikan tampilan interaktif dari penggunaan disk pada suatu direktori atau file di sistem file.
+- Langkah 3 : Server DNS akan memberikan respons berupa rujukan ke server root. 
 
-Install terlebih dahulu ncdu dengan menggunakan perintah
+- Langkah 4 : Resolver kemudian akan melakukan query ke server root untuk alamat IP tersebut.
 
-> apt update && apt install ncdu
+- Langkah 5 : Resolver melakukan query ke server DNS TLD yang diberikan oleh server root untuk mencari informasi lebih lanjut mengenai alamat IP untuk "detik.com".
 
-![Install Package ncdu](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/5_install_ncdu.png)
+- Langkah 6 : Server DNS TLD memberikan informasi mengenai server DNS otoritatif yang bertanggung jawab atas domain "detik.com".
 
-Akses ncdu dengan command $ ncdu
-![Tampilan ncdu](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/6_UI_ncdu.png)
+- Langkah 7 : Resolver melakukan query ke server DNS otoritatif untuk mendapatkan alamat IP yang diinginkan.
 
-### Perintah baobab
-Digunakan untuk menganalisa ruang pada disk dengan tampilan grafis 
-Ketikkan perintah $ baobab
-![Tampilan baobab](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/7_tampilan_baobab.png)
+- Langkah 8 : Server DNS otoritatif merespons dengan memberikan alamat IP untuk "detik.com" kepada resolver.
 
-### Membersihkan Package
 
-**Apt/aptitude/dpkg**
+> Perbedaan utama antara iterative DNS dan recursive DNS adalah pada proses pencarian informasi DNS. Iterative DNS meminta klien untuk melakukan query lebih lanjut secara bertahap, sementara recursive DNS melakukan proses query secara menyeluruh untuk klien.
 
-Manajer paket debian biasa. Ketika  menginstal sebuah paket, sumber arsip/debnya disimpan di sistem (di folder/var/cache/apt/) untuk mengaktifkan kemungkinan instalasi ulang tanpa koneksi internet 
+# 3. Config BIND9
 
-Untuk membersihkan "apt cache" gunakan perintah apt clean.
+1. Instalasi  BIND 9
 
-Setelah cache dari paket yang diinstal dibersihkan, Kita juga dapat menghapus paket yang tidak berguna dari sistem, serta file konfigurasi. Namun Ingatlah untuk memeriksa dengan cermat daftar paket yang direncanakan untuk dihapus, sebelum menerima operasi:
+![Instalasi](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/1.sudoaptbind9.png)
 
-![Apt remove](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/8_apt_remove.png)
+2. Cek Instalasi di  /etc/bind
+![Cek](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/2.cd_etc_bind%20ls-al.png)
 
-Jika sistem telah diupgrade ke versi terbaru, ada kemungkinan beberapa paket tidak lagi tersedia di repositori baru (paket tersebut sudah usang). Untuk membuat daftar dan menghapus paket-paket ini, gunakan apt dan periksa dengan cermat daftar paket yang direncanakan untuk dihapus:
-![Apt remove obsolete](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/9_apt_remove_obsolete.png)
+3. Cek Konfigurasi utama bind di named.conf
+![Cek named.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/4.named_conf.png)
+![less named.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/3.less_named.conf.png)
 
-Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus, gunakan perintah berikut :
-![Dpkg list](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/10_dpkg_awk_rc.png)
+4. Buka named.conf.local, untuk mengset atau konfigurasi zone file. Melakukan pengubahan zone sesuai nama kelompok.
+![named.conf.local](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/5.nano_named_conf_local.png)
 
-**deborphan**
+5. Buka named.conf.option, mengisi provider dan listen-on. Listen ditambahkan sesuai kelompok masing-masing
+![named.conf.options](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/5.nano_named_conf_options.png)
 
-Mencantumkan paket-paket yang diadopsi pada sistem : paket-paket yang tidak bergantung pada paket lain.
+6. Lakukan sudo named-checkconf untuk mengeck pesan error. jika tidak ada pesan error yang keluar itu berarti konfigurasi yang dilakukan telah benar
+![named-checkconf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/6.named_checkconf.png)
 
-Ingatlah untuk memeriksa dengan cermat daftar paket yang direncanakan untuk dihapus, sebelum menjalankan operasi.
-![Install deborphan](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/11_install_deborphan.png)
+7. Pergi ke arah configuration zone file dengan mengetikkan cd /var/lib/bind
 
-![Autoremove deborphan](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/12_autoremove_deborphan.png)
+8. Masuk ke zone file pertama dan mengubah data di dalamnya.
+![Zone File pertama](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/7.nano_dbkelompok8local.png)
 
-### Mengosongkan trash-bin
+9. Masuk ke zone file kedua (.inv) untuk mengubah data seperti file sebelumnya
+![Zone File Kedua](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/8.nano_dbkelompok8localinv.png)
 
-Tiga trash-bin (wastebasket) yang berbeda harus dipertimbangkan:
+10. Cek dengan menggunakan perintah ls -al untuk memastikan kedua file telah terbuat
+![ls -al](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/9.ls-al_setelahbuat_dbkelompok8local.png)
 
-**trash-bin user**
+11. Lakukan sudo named-checkzone untuk mengetahui perubahan terakhir pada zone file dan inverse file. 
+![named-checkzone](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/10.namedcheckzone_kelompok8.local_db.kelompok8.local.png)
 
-Anda dapat mengosongkannya dengan system file manager atau dengan perintah :
-![rm -Rf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/13_rm_Rf.png)
+12. Jalankan sudo systemctl restart named untuk menjalankan sistem bind.
+![restart,status named](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/11.sudo_systemctl_restart%2Cstatus_named.png)
 
-**trash-bin admin**
+13. Pergi ke file /etc/resolv.conf untuk set DNS yang telah kita atur
+![etc/resolv.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/new12.sudo_nano_etcresolvconf.png)
 
-Untuk mengosongkannya dengan cara yang benar, gunakan terminal dalam mode administrator:
-![rm -Rf cache](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/14_rm_rf_cache.png)
+14. Jalankan perintah sudo netstat -ptlun untuk menampilkan daftar koneksi jaringan yang aktif (baik incoming maupun outgoing) serta port yang sedang digunakan
+![netstat](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/13.sudo_netstat_ptlun.png)
 
-**trash-bin eksternal**
+15. Gunakan perintah dig
+![dig kelompok8.local](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/14.dig_kelompok8local.png)
+![dig +x ip](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/15.dig-x_192.168.136.10.png)
 
-biasanya diberi nama '/media/(loginname)/your_disk/.Trash_1000'.
-img
-![rm -Rf thumbnails](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/15_rm_rf_thumbnails.png)
+16. Gunakan perintah nslookup untuk mengecek instalasi berhasil atau tidak
+![nslookup ns.kelompok8.local](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/16.nslookup%20nskelompok8local.png)
 
-# Menginstall Package EXTERNAL Extensi .deb
 
-### DEBI Application
 
-Kita dapat menginstall package External (.deb) menggunakan aplikasi Gdebi yang dapat diinstall dengan cara berikut.
-![apt update apt gdebi](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/16_apt_install_apt_gdebi.png)
-
-Sekarang kita coba melakukan installasi untuk paket dari aplikasi VSCODE
-
-
-
-# Mengatur Subnet pada Mikrotik
-**1. Login mikrotik di winbox**
-
-
-**2. Buka terminal pada komputer lab dan masukkan perintah ip addr.**
-
-**3. Pasang kabel WLAN pada laptop anda.**
-**4. Pasang dan jalankan Winbox pada laptop anda.**
-**5. Connect pada physical address (MAC) yang ada di layar winbox. Dengan cara mengklik MAC address kemudian klik connect. Jika terdapat pesan error, pergi ke tools, pilih legacy mode, lakukan connect kembali.**
-**6. Nantinya akan muncul pesan configuration, pilih remove configuration.**
-
-**7. Pertama-tama untuk mengecek level mikrotik, cari 'System' di sidebar dan pilih License. Mikrotik yang digunakan memiliki level 5.**
-![Login Mikrotik](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/1_login_mikrotik.png)
-
-**8. Untuk menambahkan alamat IP, pergi ke sidebar 'IP' dan pilih 'Address List'. Klik tanda plus berwarna biru di sebelah kiri atas. Masukkan alamat IP 192.168.88.2/24, network 192.168.88.0, dan interface di ether1.**
-![Sidebar](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/2_ceklevel_mikrotik.png)
-![Ip Address](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/3.1_sidebar_ip.png)
-![Address list](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/3.2_address_list.png) 
-![Bridge](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/3.3_bridge.png) 
-![DHCP Server](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/3.4_dhcp_server.png) 
-
-**9. Buka terminal baru dan jalankan perintah 'ping 192.168.88.254'. Pastikan berhasil melakukan ping ke IP tersebut.**
-![Ping 192.168.88.254](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/4._ping_192.168.88.254.png) 
-
-**10. Pindah ke tab ports tambahkan ports,setting interface di ether2 dan Bridge di bridge1. Lakukan hal yang sama pada ether3, ether4, dan ether5.setelah ditambahkan, set ether2 sebagai Address baru. Masukkan address 192.168.8.1/24 dan network 192.168.8.0, klik apply.**
-![Tab Ports](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/5.1_tab_ports.png) 
-![Address 192.168.8.1](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/5.2_address_192.168.8.1.png) 
-
-**11. Setting gateway dari sidebar 'IP', kemudian pilih route dan klik tanda plus untuk add route. Masukkan 0.0.0.0 untuk destination address dan 192.168.88.254 untuk gateway. kemudian Klik apply untuk menerapkan/menambahkan.**
-![General destination address](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/6_general_dstaddres.png) 
-
-
-**12. Setting DHCP dari sidebar 'IP', pilih DHCP server. Pada DHCP Setup pilih bridge1 di DHCP Server Interface, ubah Set Addresses menjadi 192.168.8.200-192.168.8.254. Jika sudah, hasil pengubahan disimpan.**
-
-![DHCP setting IP](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/7_dhcp_settingIP.png) 
-
-**13. Buka IP pilih DNS. Tambahkan DNS dengan alamat PENS yaitu 202.9.85.4**
-![DHCP setting address](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/8_dhcp_settingaddress.png) 
-
-**14.Terakhir setting firewall dari sidebar 'IP'. Pilih NAT dan klik tanda plus. Masukkan source addressnya 192.168.8.0/24 dan destination addressnya 0.0.0.0. Klik apply untuk menyimpan (Jangan lupa action modenya ke ‘masquerade’)..**
-![DHCP setting address](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/9_firewall_NAT.png) 
-![Action masquerade](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/10_action_masquerade.png) 
-
-**15. Setelah itu kita Coba lakukan ipconfig dan ping. di CMD**
-![Ip Config](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/11.1_ipconfig.png) 
-![Ping](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/11.2_ping.png) 
-
-# TOPLOGI JARINGAN 
-![Topologi Kelompok 8](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_3/assets/mikrotik/Topologi%20Kelompok%208.jpg) 
 
 
 
