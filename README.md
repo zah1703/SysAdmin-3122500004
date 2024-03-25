@@ -95,6 +95,7 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 ![named.conf.options](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/5.nano_named_conf_options.png)
 
 6. Lakukan sudo named-checkconf untuk mengeck pesan error. jika tidak ada pesan error yang keluar itu berarti konfigurasi yang dilakukan telah benar
+   
 ![named-checkconf](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/6.png)
 
 7. Pergi ke arah configuration zone file dengan mengetikkan cd /var/lib/bind
