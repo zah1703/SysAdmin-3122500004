@@ -24,7 +24,7 @@
 3. [BIND9 Kelompok 8](#3-config-bind9)
 
 
-  <p><h2>Tuliskan pendapatmu tentang bagaimana Internet bekerja</h2>
+<p><h2>1. Tuliskan pendapatmu tentang bagaimana Internet bekerja</h2>
     
 <p>Internet adalah jaringan global yang terdiri dari jaringan komputer yang saling terhubung di seluruh dunia. Prinsip dasar dari bagaimana Internet bekerja adalah melalui pertukaran data antara komputer-komputer yang terhubung melalui protokol komunikasi standar yang disebut TCP/IP (Transmission Control Protocol/Internet Protocol).
 
