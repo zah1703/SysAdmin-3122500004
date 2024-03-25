@@ -77,7 +77,6 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 # 3. Config BIND9
 
 1. Instalasi  BIND 9
-
 ![Instalasi](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/1.png)
 
 2. Cek Instalasi di  /etc/bind
