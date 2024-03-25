@@ -125,6 +125,7 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 
 16. Gunakan perintah nslookup untuk mengecek instalasi berhasil atau tidak
 ![nslookup ns.kelompok8.local](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/16.png)
+![dig +x ip](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/17.png)
 
 
 
