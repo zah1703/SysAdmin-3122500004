@@ -14,19 +14,27 @@
 | [Leody Zelvon Herliansa](https://github.com/Leodyz)| 3122500010 |
 | [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 | 
 
-## 1. Bagaimana Internet bekerja?
+<p><h2>1. Tuliskan pendapatmu tentang bagaimana Internet bekerja</h2>
+    
+<p>Internet adalah jaringan global yang terdiri dari jaringan komputer yang saling terhubung di seluruh dunia. Prinsip dasar dari bagaimana Internet bekerja adalah melalui pertukaran data antara komputer-komputer yang terhubung melalui protokol komunikasi standar yang disebut TCP/IP (Transmission Control Protocol/Internet Protocol).
 
-***Jawaban dibawah adalah ekosistem internet menurut saya berdasarkan materi dari bapak Ferry Astika***
+Berikut adalah langkah-langkah umum tentang bagaimana Internet bekerja:
 
-Jaringan internet bekerja berdasarkan rangkaian protokol komunikasi dan teknologi infrastruktur yang memungkinkan perangkat. Berikut adalah langkah sederhana bagaimana proses tersebut berlangsung:
+1. Komputer dan Perangkat Terhubung: Pengguna menggunakan perangkat seperti komputer, ponsel, atau tablet untuk terhubung ke Internet melalui penyedia layanan Internet (ISP) atau jaringan lokal seperti Wi-Fi di rumah atau kantor.
 
-- Perangkat Anda (seperti komputer): Ketika memasukkan alamat situs web, komputer Anda akan pertama-tama mencari alamat IP dari situs tersebut melalui sistem Domain Name System (DNS).
+2. Protokol TCP/IP: Data dikirimkan melalui Internet menggunakan protokol TCP/IP. TCP (Transmission Control Protocol) memastikan bahwa data dikirim dengan benar dan lengkap, sedangkan IP (Internet Protocol) mengatur pengiriman data ke tujuan yang tepat.
 
-- Koneksi ke Server: Setelah mendapatkan alamat IP, komputer akan meminta koneksi ke server situs tersebut. Kemudian, permintaan ini dikirim melalui peralatan jaringan lokal Anda. Lalu, ke penyedia layanan internet (ISP) dan selanjutnya ke server tujuan.
+3. Paket Data: Data yang dikirimkan melalui Internet dipecah menjadi paket-paket kecil sebelum dikirim. Setiap paket data memiliki alamat tujuan dan informasi yang cukup untuk memandu mereka ke titik tujuan yang benar.
 
-- Pertukaran Data: Server akan merespons permintaan Anda dengan cara mengirimkan data halaman web yang Anda inginkan kembali ke komputer.
+4. Router: Setiap paket data melalui berbagai router atau simpul jaringan yang bertugas untuk meneruskan paket data ke tujuan berikutnya. Routers ini berfungsi sebagai "jembatan" antara berbagai jaringan komputer di seluruh dunia.
 
-- Tampilan di Browser: Kemudian, data yang diterima oleh komputer ini akan diinterpretasikan oleh browser dan ditampilkan sebagai halaman web.
+5. DNS (Domain Name System): Ketika Anda memasukkan nama domain seperti "www.example.com" ke browser, DNS akan menerjemahkan nama domain tersebut menjadi alamat IP yang sesuai, yang kemudian digunakan untuk menemukan server yang menyimpan situs web tersebut.
+
+6. Server dan Klien: Di ujung yang lain, ada server yang menerima permintaan dari klien (seperti browser web) untuk data atau layanan tertentu. Server ini mengirimkan responsnya kembali ke klien, yang kemudian ditampilkan kepada pengguna.
+
+7. Koneksi Aman (Opsional): Untuk koneksi yang memerlukan keamanan tambahan, seperti saat bertransaksi online atau mengakses informasi sensitif, HTTPS (Hypertext Transfer Protocol Secure) digunakan. Ini melibatkan enkripsi data yang dikirimkan antara klien dan server, sehingga data tidak dapat dibaca oleh pihak yang tidak sah.
+
+Proses ini berulang setiap kali Anda mengirim atau menerima data melalui Internet. Ini adalah cara dasar bagaimana Internet bekerja, menghubungkan jutaan perangkat dan sumber daya informasi di seluruh dunia.</p>
 
 ## 2. DNS Query
 
