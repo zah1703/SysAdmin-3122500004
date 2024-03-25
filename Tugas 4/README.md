@@ -1,10 +1,11 @@
-# TUGAS 4
+# DAFTAR TUGAS WORKSHOP ADMINISTRASI JARINGAN
 
-**DAFTAR ISI**
-
-1. [Bagaimana Internet Bekerja (pribadi)](#bagaimana-internet-bekerja)
-2. [DNS Query (pribadi)](#2-dns-query)
-3. [BIND9 Kelompok 8](#3-config-bind9)
+| TUGAS | FILE |
+| ------| -----|
+| TUGAS 1| (Tugas_1) , [Sistem Operasi Debian](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas1.md) |
+| TUGAS 2| (Tugas_2) , [MARP](Tugas_2/assets/2_Slide_SystemAdministrasi.md)|
+| TUGAS 3| (Tugas_3) , [LINUX APT COMMAND](https://github.com/zah1703/Workshop-Administrasi-Jaringan/blob/main/Tugas_3/README.md)|
+| TUGAS 5| (Tugas_4) , [Bagaimana Internet Bekerja, DNS Query & Bin9](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204#3-config-bind9)|
 
 # Disusun Oleh
 
@@ -12,7 +13,16 @@
 | ---- | --- |
 | [Zahrotul Hidayah](https://github.com/zah1703)| 3122500004 |
 | [Leody Zelvon Herliansa](https://github.com/Leodyz)| 3122500010 |
-| [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 | 
+| [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 |                                   
+
+# TUGAS 4
+
+**DAFTAR ISI**
+
+1. [Bagaimana Internet Bekerja (pribadi)](#)
+2. [DNS Query (pribadi)](#2-dns-query)
+3. [BIND9 Kelompok 8](#3-config-bind9)
+
 
 <p><h2>1. Tuliskan pendapatmu tentang bagaimana Internet bekerja</h2>
     
@@ -28,7 +38,7 @@ Berikut adalah langkah-langkah umum tentang bagaimana Internet bekerja:
 
 4. Router: Setiap paket data melalui berbagai router atau simpul jaringan yang bertugas untuk meneruskan paket data ke tujuan berikutnya. Routers ini berfungsi sebagai "jembatan" antara berbagai jaringan komputer di seluruh dunia.
 
-5. DNS (Domain Name System): Ketika Anda memasukkan nama domain seperti "www.example.com" ke browser, DNS akan menerjemahkan nama domain tersebut menjadi alamat IP yang sesuai, yang kemudian digunakan untuk menemukan server yang menyimpan situs web tersebut.
+5. DNS (Domain Name System): Ketika Anda memasukkan nama domain seperti "www.kelompok8.com" ke browser, DNS akan menerjemahkan nama domain tersebut menjadi alamat IP yang sesuai, yang kemudian digunakan untuk menemukan server yang menyimpan situs web tersebut.
 
 6. Server dan Klien: Di ujung yang lain, ada server yang menerima permintaan dari klien (seperti browser web) untuk data atau layanan tertentu. Server ini mengirimkan responsnya kembali ke klien, yang kemudian ditampilkan kepada pengguna.
 
@@ -67,11 +77,12 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 # 3. Config BIND9
 
 1. Instalasi  BIND 9
-
-![Instalasi](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/1.sudoaptbind9.png)
+   
+![Instalasi](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/1.png)
 
 2. Cek Instalasi di  /etc/bind
-![Cek](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/2.cd_etc_bind%20ls-al.png)
+   
+![Cek](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/2.png)
 
 3. Cek Konfigurasi utama bind di named.conf
 ![Cek named.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/4.named_conf.png)
@@ -84,7 +95,8 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 ![named.conf.options](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/5.nano_named_conf_options.png)
 
 6. Lakukan sudo named-checkconf untuk mengeck pesan error. jika tidak ada pesan error yang keluar itu berarti konfigurasi yang dilakukan telah benar
-![named-checkconf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/6.named_checkconf.png)
+   
+![named-checkconf](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/6.png)
 
 7. Pergi ke arah configuration zone file dengan mengetikkan cd /var/lib/bind
 
@@ -95,13 +107,13 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 ![Zone File Kedua](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/8.nano_dbkelompok8localinv.png)
 
 10. Cek dengan menggunakan perintah ls -al untuk memastikan kedua file telah terbuat
-![ls -al](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/9.ls-al_setelahbuat_dbkelompok8local.png)
+![ls -al](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/10.png)
 
 11. Lakukan sudo named-checkzone untuk mengetahui perubahan terakhir pada zone file dan inverse file. 
-![named-checkzone](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/10.namedcheckzone_kelompok8.local_db.kelompok8.local.png)
+![named-checkzone](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/11.png)
 
 12. Jalankan sudo systemctl restart named untuk menjalankan sistem bind.
-![restart,status named](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/11.sudo_systemctl_restart%2Cstatus_named.png)
+![restart,status named](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/12.png)
 
 13. Pergi ke file /etc/resolv.conf untuk set DNS yang telah kita atur
 ![etc/resolv.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/new12.sudo_nano_etcresolvconf.png)
@@ -110,11 +122,12 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
 ![netstat](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/13.sudo_netstat_ptlun.png)
 
 15. Gunakan perintah dig
-![dig kelompok8.local](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/14.dig_kelompok8local.png)
-![dig +x ip](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/15.dig-x_192.168.136.10.png)
+![dig kelompok8.local](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/15a.png)
+![dig +x ip](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/15b.png)
 
 16. Gunakan perintah nslookup untuk mengecek instalasi berhasil atau tidak
 ![nslookup ns.kelompok8.local](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/16.png)
-![dig +x ip](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/17.png)
+
+
 
 
