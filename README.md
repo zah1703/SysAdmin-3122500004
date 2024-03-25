@@ -80,51 +80,51 @@ Berdasarkan referensi [Penjelasan DNS](https://www.hostinger.co.uk/tutorials/wha
    
 ![Instalasi](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/1.png)
 
-3. Cek Instalasi di  /etc/bind
+2. Cek Instalasi di  /etc/bind
    
 ![Cek](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/2.png)
 
-5. Cek Konfigurasi utama bind di named.conf
+3. Cek Konfigurasi utama bind di named.conf
 ![Cek named.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/4.named_conf.png)
 ![less named.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/3.less_named.conf.png)
 
-6. Buka named.conf.local, untuk mengset atau konfigurasi zone file. Melakukan pengubahan zone sesuai nama kelompok.
+4. Buka named.conf.local, untuk mengset atau konfigurasi zone file. Melakukan pengubahan zone sesuai nama kelompok.
 ![named.conf.local](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/5.nano_named_conf_local.png)
 
-7. Buka named.conf.option, mengisi provider dan listen-on. Listen ditambahkan sesuai kelompok masing-masing
+5. Buka named.conf.option, mengisi provider dan listen-on. Listen ditambahkan sesuai kelompok masing-masing
 ![named.conf.options](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/5.nano_named_conf_options.png)
 
-8. Lakukan sudo named-checkconf untuk mengeck pesan error. jika tidak ada pesan error yang keluar itu berarti konfigurasi yang dilakukan telah benar
+6. Lakukan sudo named-checkconf untuk mengeck pesan error. jika tidak ada pesan error yang keluar itu berarti konfigurasi yang dilakukan telah benar
 ![named-checkconf](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/6.png)
 
-9. Pergi ke arah configuration zone file dengan mengetikkan cd /var/lib/bind
+7. Pergi ke arah configuration zone file dengan mengetikkan cd /var/lib/bind
 
-10. Masuk ke zone file pertama dan mengubah data di dalamnya.
+8. Masuk ke zone file pertama dan mengubah data di dalamnya.
 ![Zone File pertama](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/7.nano_dbkelompok8local.png)
 
-11. Masuk ke zone file kedua (.inv) untuk mengubah data seperti file sebelumnya
+9. Masuk ke zone file kedua (.inv) untuk mengubah data seperti file sebelumnya
 ![Zone File Kedua](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/8.nano_dbkelompok8localinv.png)
 
-12. Cek dengan menggunakan perintah ls -al untuk memastikan kedua file telah terbuat
+10. Cek dengan menggunakan perintah ls -al untuk memastikan kedua file telah terbuat
 ![ls -al](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/10.png)
 
-13. Lakukan sudo named-checkzone untuk mengetahui perubahan terakhir pada zone file dan inverse file. 
+11. Lakukan sudo named-checkzone untuk mengetahui perubahan terakhir pada zone file dan inverse file. 
 ![named-checkzone](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/11.png)
 
-14. Jalankan sudo systemctl restart named untuk menjalankan sistem bind.
+12. Jalankan sudo systemctl restart named untuk menjalankan sistem bind.
 ![restart,status named](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/12.png)
 
-15. Pergi ke file /etc/resolv.conf untuk set DNS yang telah kita atur
+13. Pergi ke file /etc/resolv.conf untuk set DNS yang telah kita atur
 ![etc/resolv.conf](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/new12.sudo_nano_etcresolvconf.png)
 
-16. Jalankan perintah sudo netstat -ptlun untuk menampilkan daftar koneksi jaringan yang aktif (baik incoming maupun outgoing) serta port yang sedang digunakan
+14. Jalankan perintah sudo netstat -ptlun untuk menampilkan daftar koneksi jaringan yang aktif (baik incoming maupun outgoing) serta port yang sedang digunakan
 ![netstat](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_4/assets/13.sudo_netstat_ptlun.png)
 
-17. Gunakan perintah dig
+15. Gunakan perintah dig
 ![dig kelompok8.local](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/15a.png)
 ![dig +x ip](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/15b.png)
 
-18. Gunakan perintah nslookup untuk mengecek instalasi berhasil atau tidak
+16. Gunakan perintah nslookup untuk mengecek instalasi berhasil atau tidak
 ![nslookup ns.kelompok8.local](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%204/assets/16.png)
 
 
