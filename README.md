@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="assets/logopens.png" alt="Logo PENS">
+  <img src="https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%205_UTS/assets/logopens.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Zahrotul Hidayah</h3>
   <p style="text-align: center;">
     <strong>NRP : 3122500004</strong><br>
@@ -14,14 +14,14 @@
   <hr>
 </div>
 
-| Nomor | File                                 |
-|-------|--------------------------------------|
-| 1     | [Pendahuluan](./pendahuluan/readme.md) |
-| 2     | [Konfigurasi NTP Server](./network_time/readme.md) |
-| 3     | [Konfigurasi Web Server](./web_server/readme.md) |
-| 4     | [Konfigurasi Database Server](./database_server/readme.md) |
-| 5     | [Konfigurasi phpmyadmin](./phpmyadmin/readme.md) |
-| 6     | [Konfigurasi Postfix & Dovecot](./postfix_dovecot/readme.md) |
-| 7     | [Konfigurasi roundcube](./roundcube/readme.md) |
+# DAFTAR TUGAS WORKSHOP ADMINISTRASI JARINGAN
+
+| TUGAS | FILE |
+| ------| -----|
+| TUGAS 1|  [Tugas 1](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas1.md) |
+| TUGAS 2| [FILE](Tugas_2) , [MARP](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_2)|
+| TUGAS 3| [Tugas 3](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
+| TUGAS 4| [Tugas 4](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
+| TUGAS 4| [Tugas 5 UTS](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
 
 ---
