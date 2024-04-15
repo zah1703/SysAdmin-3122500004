@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-  <img src="assets/logopens.png" alt="Logo PENS">
+  <img src="https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%205_UTS/assets/logopens.png" alt="Logo PENS">
   <h3 style="text-align: center;">Disusun Oleh : <br>Zahrotul Hidayah</h3>
   <p style="text-align: center;">
     <strong>NRP : 3122500004</strong><br>
@@ -16,12 +16,12 @@
 
 | Nomor | File                                 |
 |-------|--------------------------------------|
-| 1     | [Pendahuluan](./pendahuluan/readme.md) |
-| 2     | [Konfigurasi NTP Server](./network_time/readme.md) |
-| 3     | [Konfigurasi Web Server](./web_server/readme.md) |
-| 4     | [Konfigurasi Database Server](./database_server/readme.md) |
-| 5     | [Konfigurasi phpmyadmin](./phpmyadmin/readme.md) |
-| 6     | [Konfigurasi Postfix & Dovecot](./postfix_dovecot/readme.md) |
-| 7     | [Konfigurasi roundcube](./roundcube/readme.md) |
+| 1     | [Pendahuluan](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/pendahuluan) |
+| 2     | [Konfigurasi NTP Server](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/network_time) |
+| 3     | [Konfigurasi Web Server](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/web_server) |
+| 4     | [Konfigurasi Database Server](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/database_server) |
+| 5     | [Konfigurasi phpmyadmin](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/phpmyadmin) |
+| 6     | [Konfigurasi Postfix & Dovecot](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/postfix_dovecot) |
+| 7     | [Konfigurasi roundcube](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/roundcube) |
 
 ---
