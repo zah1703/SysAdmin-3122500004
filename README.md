@@ -18,10 +18,10 @@
 
 | TUGAS | FILE |
 | ------| -----|
-| TUGAS 1|  [Tugas 1](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas1.md) |
-| TUGAS 2| [FILE](Tugas_2) , [MARP](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_2)|
-| TUGAS 3| [Tugas 3](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
-| TUGAS 4| [Tugas 4](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
-| TUGAS 4| [Tugas 5 UTS](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
+| TUGAS 1| [Sistem Operasi Debian](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas1.md) |
+| TUGAS 2| [Struktur Direktori Pada Linux](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_2)|
+| TUGAS 3| [Mikrotik](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
+| TUGAS 4| [DNS dan Ekosistem Internet](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
+| TUGAS 4| [Tugas 5 UTS (Instalasi & Konfigurasi Web, Database & Mail Server)](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
 
 ---
