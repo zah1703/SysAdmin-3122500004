@@ -5,7 +5,7 @@
 | TUGAS 1| (Tugas_1) , [Sistem Operasi Debian](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas1.md) |
 | TUGAS 2| (Tugas_2) , [MARP](Tugas_2/assets/2_Slide_SystemAdministrasi.md)|
 | TUGAS 3| (Tugas_3) , [LINUX APT COMMAND](https://github.com/zah1703/Workshop-Administrasi-Jaringan/blob/main/Tugas_3/README.md)|
-| TUGAS 5| (Tugas_4) , [Bagaimana Internet Bekerja, DNS Query & Bin9](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204#3-config-bind9)|
+| TUGAS 4| (Tugas_4) , [Bagaimana Internet Bekerja, DNS Query & Bin9](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204#3-config-bind9)|
 
 # Disusun Oleh
 
