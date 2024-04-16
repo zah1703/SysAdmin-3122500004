@@ -105,7 +105,7 @@ Berdasarkan Referensi dari [Debian Directory Structure](https://www.debianadmin.
 
 ## Directory File Linux yang terinstalasi
 
-![alt text](/assets//assets/img/directorylinux.png)
+![alt text](./assets//assets/img/directorylinux.png)
 
 # (Soal 2) [MARP Presentation](/assets/2_Slide_SystemAdministrasi.md)
 
