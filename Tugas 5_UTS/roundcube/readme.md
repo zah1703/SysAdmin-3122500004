@@ -102,7 +102,7 @@ vi mail.conf
 ```
 ```
 <VirtualHost *:80>
-    ServerName mail.contoh.local
+    ServerName mail.kelompok8.local
     DocumentRoot /usr/share/roundcube
 </VirtualHost>
 ```
@@ -117,15 +117,8 @@ Restart apache service.
 `systemctl restart apache2
 `
 ### Testing
-Selanjutnya buka web browser pada sisi client dan masukkan domain dari mail server, maka akan muncul interface dari roundcube. Lalu login menggunakan salah satu user yang telah dibuat.
-![roundcube](./img/10r.png)
+![roundcube](./img/hasil.png)
 
-Klik pada compose dan isikan pesan untuk user lainnya. Lalu klik send.
-![roundcube](./img/11r.png)
-
-Logout dan login ke user penerima, maka akan muncul pesan yang dikirim.
-![roundcube](./img/12r.png)
-  
   
 
   
