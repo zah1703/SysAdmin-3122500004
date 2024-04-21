@@ -22,7 +22,7 @@ Isikan default host dengan nama domain mail server.
 ```
 ...
 // For example %n = mail.domain.tld, %t = domain.tld
-$config['default_host'] = 'mail.contoh.local';
+$config['default_host'] = 'mail.kelompok8.local';
 ...
 ```
 Ganti smtp server dengan nama domain mail server.
@@ -30,7 +30,7 @@ Ganti smtp server dengan nama domain mail server.
 ```
 ...
 // For example %n = mail.domain.tld, %t = domain.tld
-$config['smtp_server'] = 'mail.contoh.local';
+$config['smtp_server'] = 'mail.kelompok8.local';
 ...
 ```
 
