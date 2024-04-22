@@ -7,7 +7,7 @@
 3. Set database info
    ![roundcube](./img/R3.png)
    
-5. File config.inc.php
+4. File config.inc.php
    
    ![roundcube](./img/R4.png)
 
@@ -15,19 +15,18 @@
    
    ![roundcube](./img/R5.png)
 
-7. Uncomment file/etc/apache2/conf-enabled/rouncube.conf
-   
+5. Uncomment file/etc/apache2/conf-enabled/rouncube.conf
    ![roundcube](./img/R6.png)
    
-9. Ganti config di /etc/apache2/mods-enabled/dir.conf
+6. Ganti config di /etc/apache2/mods-enabled/dir.conf
     
    ![roundcube](./img/R7.png)
    
-11. Restart apache2
+7. Restart apache2
     
    ![roundcube](./img/R8.png)
    
-13. Hasil
+8. Hasil
    ![roundcube](./img/hasil.png)
 
   
