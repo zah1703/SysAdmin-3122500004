@@ -6,19 +6,28 @@
    ![roundcube](./img/R2.png)
 3. Set database info
    ![roundcube](./img/R3.png)
-4. File config.inc.php
+   
+5. File config.inc.php
+   
    ![roundcube](./img/R4.png)
 
-   `add dipaling bawah`
+   ```add dipaling bawah```
+   
    ![roundcube](./img/R5.png)
 
-5. Uncomment file/etc/apache2/conf-enabled/rouncube.conf
+7. Uncomment file/etc/apache2/conf-enabled/rouncube.conf
+   
    ![roundcube](./img/R6.png)
-6. Ganti config di /etc/apache2/mods-enabled/dir.conf
+   
+9. Ganti config di /etc/apache2/mods-enabled/dir.conf
+    
    ![roundcube](./img/R7.png)
-7. Restart apache2
+   
+11. Restart apache2
+    
    ![roundcube](./img/R8.png)
-8. Hasil
+   
+13. Hasil
    ![roundcube](./img/hasil.png)
 
   
