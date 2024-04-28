@@ -22,6 +22,6 @@
 | 4     | [Konfigurasi Database Server](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/database_server) |
 | 5     | [Konfigurasi phpmyadmin](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/phpmyadmin) |
 | 6     | [Konfigurasi Postfix & Dovecot](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/postfix_dovecot) |
-| 7     | [Konfigurasi roundcube](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/roundcube) |
+| 7     | [Konfigurasi roundcube dan Setting Mailserver untuk jaringan di Lab C307](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS/roundcube) |
 
 ---
