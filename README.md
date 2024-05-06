@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 style="text-align: center;font-weight: bold">Praktikum 5<br>Instalasi dan Konfigurasi Web Server, Database Server, dan Mail Server</h1>
+  <h1 style="text-align: center;font-weight: bold">Laporan Praktikum<br>Workhsop Administrasi Jaringan</h1>
   <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
@@ -23,5 +23,6 @@
 | TUGAS 3| [Mikrotik](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
 | TUGAS 4| [DNS dan Ekosistem Internet](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
 | TUGAS 5| [Tugas 5 UTS (Instalasi & Konfigurasi Web, Database & Mail Server)](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
+| TUGAS 6| [Web Server & Web Browser Architecture](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%206)|
 
 ---
