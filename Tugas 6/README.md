@@ -1,10 +1,6 @@
 # TUGAS 6
 
-# Disusun Oleh
-
-| NAMA | NRP |
-| ---- | --- |
-| [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 | 
+# Web Server & Web Browser Architecture
 
 **DAFTAR ISI**
 
