@@ -23,6 +23,6 @@
 | TUGAS 3| [Mikrotik](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
 | TUGAS 4| [DNS dan Ekosistem Internet](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
 | TUGAS 5| [Tugas 5 UTS (Instalasi & Konfigurasi Web, Database & Mail Server)](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
-| TUGAS 6| [Web Server & Web Browser Architecture](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%206)|
+| TUGAS 6| [Web Server & Web Browser Architecture menggunakan Docker](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%206)|
 
 ---
