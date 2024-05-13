@@ -1,11 +1,5 @@
 # TUGAS 6
 
-# Disusun Oleh
-
-| NAMA | NRP |
-| ---- | --- |
-| [Zahrotul Hidayah]| 3122500018 | 
-
 **DAFTAR ISI**
 
 1. [Web Server](#web-server)
