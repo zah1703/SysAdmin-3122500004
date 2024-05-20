@@ -105,7 +105,7 @@ docker run -dp 3000:3000 docker-101
 
 2.Buka aplikasinya dengan mengklik badge "3000" di bagian atas antarmuka PWD. Setelah terbuka, web akan memiliki daftar tugas kosong!
 
-![Buka Todo App](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/4.todo%20app.png)
+![Buka Todo App](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/25zahro.png)
 
 
 # 3. Updating our App
@@ -159,7 +159,7 @@ docker run -dp 3000:3000 docker-101
 
 Sudah berubah
 
-![Web](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/12.port%203000%20terbaru.png)
+![Web](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/24zahro.png)
 
 # 4. Sharing Our Apps
 
