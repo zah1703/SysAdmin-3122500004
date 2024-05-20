@@ -4,7 +4,7 @@
 
 | NAMA | NRP |
 | ---- | --- |
-| Zahrotul Hidayah | 3122500004 | 
+| Zahrotul Hidayah | 3122500018 | 
 
 **DAFTAR ISI**
 
@@ -27,7 +27,7 @@ Kode ini akan menjalankan container dari image dockersamples/101-tutorial dalam 
 docker run -d -p 80:80 dockersamples/101-tutorial\
 ```
 
-![docker run pertama kali](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/1ok.png)
+![docker run pertama kali](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/0.1%20pwd%20docker.png)
 
 # 2. Our Application
 
@@ -73,7 +73,7 @@ RUN yarn install --production
 CMD ["node", "/app/src/index.js"]
 ```
 
-![Struktur File](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/2ok.png)
+![Struktur File](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/1.Named%20Dockerfile%20with%20the%20following%20contents..png)
 
 Penjelasan
 
@@ -88,7 +88,7 @@ Penjelasan
 **CMD ["node", "/app/src/index.js"]**: Menentukan perintah yang akan dijalankan ketika container dimulai, yaitu menjalankan aplikasi Node.js dari file index.js di direktori src.
 
 2.Lakukan Build Images
-![Build Docker](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/24zahro.png)
+![Build Docker](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/2.docker%20build.png)
 
 **-t docker-101**: Menetapkan tag (nama) untuk image yang dibangun, dalam hal ini docker-101.
 **.**: Menunjukkan bahwa Dockerfile dan konteks build berada di direktori saat ini.
