@@ -18,11 +18,11 @@
 
 | TUGAS | FILE |
 | ------| -----|
-| TUGAS 1| [Sistem Operasi Debian](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas1.md) |
-| TUGAS 2| [Struktur Direktori Pada Linux](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_2)|
-| TUGAS 3| [Mikrotik](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
-| TUGAS 4| [DNS dan Ekosistem Internet](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
-| TUGAS 5| [Tugas 5 UTS (Instalasi & Konfigurasi Web, Database & Mail Server)](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
-| TUGAS 6| [Web Server & Web Browser Architecture menggunakan Docker](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%206)|
-
+| TUGAS 1 | [Sistem Operasi Debian](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas1.md) |
+| TUGAS 2 | [Struktur Direktori Pada Linux](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_2)|
+| TUGAS 3 | [Mikrotik](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas_3)|
+| TUGAS 4 | [DNS dan Ekosistem Internet](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%204)|
+| TUGAS 5 | [Tugas 5 UTS (Instalasi & Konfigurasi Web, Database & Mail Server)](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
+| TUGAS 6 | [Web Server & Web Browser Architecture menggunakan Docker](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%206)|
+| TUGAS 7 | [Docker 101](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%207)
 ---
