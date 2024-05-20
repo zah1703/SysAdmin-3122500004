@@ -4,7 +4,7 @@
 
 | NAMA | NRP |
 | ---- | --- |
-| [Zahrotul Hidayah]| 3122500004 | 
+| Zahrotul Hidayah | 3122500004 | 
 
 **DAFTAR ISI**
 
