@@ -4,7 +4,7 @@
 
 | NAMA | NRP |
 | ---- | --- |
-| [Adam Rasyid Nurmuhammad](https://github.com/adamrasyid01)| 3122500018 | 
+| [Zahrotul Hidayah]| 3122500004 | 
 
 **DAFTAR ISI**
 
