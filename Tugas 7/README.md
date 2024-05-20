@@ -27,7 +27,7 @@ Kode ini akan menjalankan container dari image dockersamples/101-tutorial dalam 
 docker run -d -p 80:80 dockersamples/101-tutorial\
 ```
 
-![docker run pertama kali](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/0.1%20pwd%20docker.png)
+![docker run pertama kali](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/1ok.png)
 
 # 2. Our Application
 
@@ -73,7 +73,7 @@ RUN yarn install --production
 CMD ["node", "/app/src/index.js"]
 ```
 
-![Struktur File](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/25zahro.png)
+![Struktur File](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/2ok.png)
 
 Penjelasan
 
