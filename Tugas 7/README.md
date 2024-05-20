@@ -165,9 +165,7 @@ Sudah berubah
 
 1.Seperti github Docker memiliki Repositorynya sendiri seperti pada step pertama dilakukan pulling dari Docker Repo yang bernama Hub Docker https://hub.docker.com/
 
-![Create Repo](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/13.%20Create%20Repository.png)
-
-![Beri nama pada repo](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/14.beri%20nama%20repo.png)
+![Create Repo](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/19zahro.png)
 
 # 4.1 Pushing our Image
 
@@ -192,7 +190,7 @@ docker push adamrasyid01/101-todo-app
 
 5.Berhasil !!!
 
-![Berhasil todo app](https://github.com/adamrasyid01/SysAdmin-3122500018/blob/main/Tugas_7/0.2%20berhasil%20.png)
+![Berhasil todo app](https://github.com/zah1703/SysAdmin-3122500004/blob/main/Tugas%207/assets/18zahro.png)
 
 # 4.2 Running our Image on a New Instance
 
