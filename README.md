@@ -25,4 +25,5 @@
 | TUGAS 5 | [Tugas 5 UTS (Instalasi & Konfigurasi Web, Database & Mail Server)](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%205_UTS)|
 | TUGAS 6 | [Web Server & Web Browser Architecture menggunakan Docker](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%206)|
 | TUGAS 7 | [Docker 101](https://github.com/zah1703/SysAdmin-3122500004/tree/main/Tugas%207)
+| Tugas 8 | [Tugas Kelompok Docker Project Charter Container Based App](https://github.com/zah1703/SysAdmin-3122500004/tree/main/tugas-kelompok)
 ---
